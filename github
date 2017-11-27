@@ -1,0 +1,45 @@
+def setup():
+    size(400, 400)
+def draw():
+    background(0)
+    stroke(0)
+    strokeWeight(2)
+    fill(200)
+    rect(140, 50, 110, 360)
+    for y in range (60, 390, 30):
+        z = random(y)
+        if str(z).find("7") > -1:
+            RNG = 0
+        else:
+            RNG = 10
+        fill(26*RNG, 10*RNG, 13*RNG)
+        rect(150, y, 10, 15)
+        z = random(y)
+        if str(z).find("7") > -1:
+            RNG = 3.2
+        else:
+            RNG = 10
+        fill(RNG*25, RNG*17, RNG*1)
+        rect(170, y, 10, 15)
+        z = random(y)
+        if str(z).find("7") > -1:
+            RNG = 5.4
+        else:
+            RNG = 2.40 
+        fill(RNG*33, RNG*40, RNG*15)
+        rect(190, y, 10, 15)
+        z = random(y)
+        if str(z).find("7") > -1:
+            RNG = 103
+        else:
+            RNG = 5
+        fill(0.5*RNG, 1.5*RNG, 1.5*RNG)
+        rect(210, y, 10, 15)
+        z = random(y)
+        if str(z).find("7") > -1:
+            RNG = 1
+        else:
+            RNG = 40 
+        fill(5*RNG, 2*RNG, 20*RNG)
+        rect(230, y, 10, 15)
+        
